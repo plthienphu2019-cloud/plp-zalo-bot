@@ -8,9 +8,9 @@ import requests
 # ============================================================
 # CẤU HÌNH — SỬA Ở ĐÂY HOẶC DÙNG ENV VAR TRÊN RENDER
 # ============================================================
-BOT_TOKEN      = os.environ.get("BOT_TOKEN", "DÁN_BOT_TOKEN_VÀO_ĐÂY")
+BOT_TOKEN      = os.environ.get("540134130817105426", "DÁN_BOT_TOKEN_VÀO_ĐÂY")
 ADMIN_PASS     = os.environ.get("ADMIN_PASS", "plp2026")
-WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "plp-secret-2026")
+WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "plptool-update2026")
 DEFAULT_CHAT_ID= os.environ.get("DEFAULT_CHAT_ID", "")   # có thể để trống, bot sẽ tự học khi vào nhóm
 ZALO_API       = f"https://bot-api.zaloplatforms.com/bot{BOT_TOKEN}"
 
@@ -23,7 +23,7 @@ log = logging.getLogger("plp-zalo")
 # ============================================================
 STATE = {
     "chat_id": DEFAULT_CHAT_ID or None,   # ID nhóm Zalo
-    "chat_title": "",                     # tên nhóm
+    "chat_title": "PLP TOOL",                     # tên nhóm
     "last_update": None,                  # raw update cuối
     "history": [],                        # [{ts, text, ok, chat_id}]
 }
